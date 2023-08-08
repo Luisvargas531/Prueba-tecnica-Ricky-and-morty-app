@@ -8,7 +8,7 @@ class ApiProvider with ChangeNotifier {
   final url = 'rickandmortyapi.com';
   List<Character> characters = [];
   List<Episode> episodes = [];
-
+// se usa para llamar la api de personajes 
   Future<void> getCharacters(int page) async {
     final result = await http
         .get(Uri.https(url, "/api/character", {'page': page.toString()}));
