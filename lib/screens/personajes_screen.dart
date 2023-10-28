@@ -36,9 +36,9 @@ class Characterscreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    cardData("estatus:", character.status!),
-                    cardData("especie:", character.species!),
-                    cardData("origen:", character.origin!.name!),
+                    cardData(character.status!, "Estatus:"),
+                    cardData(character.species!, "Especie:"),
+                    cardData(character.origin!.name!, "Origen:"),
                   ],
                 )),
             const Text(
